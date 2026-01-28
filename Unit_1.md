@@ -75,13 +75,11 @@ Space complexity is the total amount of **memory space** used by an algorithm in
 
 
 
-### Formal Definitions
-
-* **Big O ($O$):** <br>
+**Big O ($O$):** <br>
 It is the way to express asymptotic upper bound. It f and g are any two functions from set of integers then function f(n) is said to be big oh of f(n) ie
 
   $f(n) = O(g(n))$ if there exist positive constants $c$ and $n_0$ such that:
-    $$0 \le f(n) \le c \cdot g(n) \text{ for all } n \ge n_0$$
+    $$f(n) \le c \cdot g(n) \text{ for all } n \ge n_0$$
 ![Big O analysis](images/big-o-analysis.png)
 
 ### Example 1
@@ -100,15 +98,15 @@ $f(n) = 3n^3 + 2n^2 + 5n + 1$
 
 * **Dominant Term:** $3n^3$
 * **Order of Growth:** Cubic ($n^3$)
-* **Big O Notation:** **$O(n^3)$** <br>
+* **Big O Notation:** **$O(n^3)$** <br><br>
 
-* **Big Omega ($\Omega$):** 
+**Big Omega ($\Omega$):** 
 It is the way to express the asymptotic lower bound of an alogrithm's time complexity. It is the **best-case** situation of algorithm. If f and g are any two functions from set of integers , then function f(n) is said to be big omega of g(n) if and only if there exists two positive constants c and n0 such that
-    $$0 \le c \cdot g(n) \le f(n) \text{ for all } n \ge n_0$$
+    $$f(n) \ge c \cdot g(n) \text{ for all } n \ge n_0$$
 ![Big Omega analysis](images/big-omega-analysis.png)
 
 
-* **Big Theta ($\Theta$):** 
+**Big Theta ($\Theta$):** 
 Big thita gives asymptotically tight bound. Let f and g be the function from the set of natural numbers. The function f is said to be ($\Theta$)g, if there are constants c1.c2 > 0 and a natural number n0 such that:
     $$c_1 \cdot g(n) \le f(n) \le c_2 \cdot g(n) \text{ for all } n \ge n_0$$
 ![Big Thita analysis](images/big-thita-analysis.png)
