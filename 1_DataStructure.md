@@ -1,8 +1,8 @@
 # Data Structures and Algorithms
 
-## 1. Introduction to Data Structures
+## Introduction to Data Structures
 
-### a. Definition
+### Definition
 A **Data Structure** is a systematic way of organizing, managing, and storing data in a computer so that it can be accessed and modified efficiently. It is not just about storing data but also about the relationship between data elements and the operations allowed on them.
 
 ### Types of Data Structures
@@ -16,7 +16,9 @@ Non-Linear data structures store the data in the form of a hierarchy. Therefore,
 
 ![Non Linear Data Structure](images/non-linear-data-structure.png)
 
-### b. Abstract Data Type (ADT)
+---
+
+### Abstract Data Type (ADT)
 An **Abstract Data Type (ADT)** is a high-level description of a data structure that specifies **what** operations can be performed on the data, but not **how** these operations will be implemented.
 
 * **Logic vs. Implementation:** It separates the logical properties from the physical storage.
@@ -27,7 +29,7 @@ An **Abstract Data Type (ADT)** is a high-level description of a data structure 
 
 
 
-### c. Importance of Data Structures
+### Importance of Data Structures
 As applications become complex and data-rich, three main problems arise that data structures help solve:
 
 1.  **Processor Speed:** High-speed data processing requires organized data for quick retrieval.
@@ -36,7 +38,7 @@ As applications become complex and data-rich, three main problems arise that dat
 
 ---
 
-## 2. Asymptotic Notations
+## Asymptotic Notations
 
 Asymptotic notation is the mathematical language used to describe the **efficiency** of an algorithm as the input size ($n$) grows toward infinity. It focuses on the "growth rate" rather than specific execution times in milliseconds.
 
