@@ -57,7 +57,51 @@ A **Circular Queue** solves the memory wastage problem of linear queues. The las
 `Rear = (Rear +  1) % Size`
 `Front = (Front + 1) % Size`
 
+![Circular Queue](images/circular-queue.png)
+
+### Advantages of Circular Queue
+- Optimal Memory Utilization
+- Prevents False Overflow
+- Continuous Data Flow
+- Efficient Performance
+- Effecitive for Buffering
+
 --- 
+
+### Operations and Algorithms for Circular Queue
+a. **Algorithm for Circular Enqueue Operation**:
+``` java
+1. Start
+2. If (Rear + 1) % Size = Front then
+      Write "Queue Overflow"
+      go to Step 6
+3. If Front == -1: // Inserting the first element
+      Front = 0
+      Rear = 0
+   ELSE
+      Rear = (Rear + 1) % Size
+4. Queue[Rear] = value
+      Write "Inserted", value
+5. End
+
+```
+
+b. **Algorithm for Circular Dequeue Operation**
+``` java
+1. Start
+2. If Front == -1 then
+      Write "Queue Undeflow"
+      go to Step 6
+3. Data = Queue[Front]
+4. If Front == Rear: // Queue has only one element, now becomes empty
+      Front = -1
+      Rear = -1
+   ELSE:
+      Front = (Front + 1) % Size
+5. Return Data
+6. End
+
+```
 
 ### Declarations and Initialization of Cicular Queue
 To initialize a circular queue, both `front` and `rear` are typically set to `-1`.
